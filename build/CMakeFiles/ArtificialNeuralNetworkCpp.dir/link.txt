@@ -1,0 +1,3 @@
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\ArtificialNeuralNetworkCpp.dir/objects.a
+C:\mingw64\bin\ar.exe qc CMakeFiles\ArtificialNeuralNetworkCpp.dir/objects.a @CMakeFiles\ArtificialNeuralNetworkCpp.dir\objects1.rsp
+C:\mingw64\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\ArtificialNeuralNetworkCpp.dir/objects.a -Wl,--no-whole-archive -o ArtificialNeuralNetworkCpp.exe -Wl,--out-implib,libArtificialNeuralNetworkCpp.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\ArtificialNeuralNetworkCpp.dir\linklibs.rsp
