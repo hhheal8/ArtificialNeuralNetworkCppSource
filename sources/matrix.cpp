@@ -47,8 +47,7 @@ matrix *matrix::transpose() {
 
   return m;
 
-  delete m;
-  m = nullptr;
+  dealloc_all(m);
 
 }
 

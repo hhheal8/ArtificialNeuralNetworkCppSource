@@ -16,7 +16,7 @@ utils::multiply_matrix::multiply_matrix(matrix *require_a, matrix *require_b)
 
   c = new matrix(a->get_row_s(), b->get_col_s(), false);
 
-  dealloc_all(c);
+  // dealloc_all(c); //FIXME: 
 
 }
 
@@ -31,5 +31,7 @@ matrix *utils::multiply_matrix::execute() {
       }
     }
   }
+
+  return c;
 
 }

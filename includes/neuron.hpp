@@ -6,8 +6,6 @@
 #include <random>
 #include <vector>
 
-#include "dealloc_all.hpp"
-
 class neuron {
 
   private:

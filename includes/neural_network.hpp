@@ -9,6 +9,7 @@
 #include "dealloc_all.hpp"
 #include "layer.hpp"
 #include "matrix.hpp"
+#include "multiply_matrix.hpp"
 
 class layer;
 class matrix;
@@ -17,8 +18,7 @@ class neural_network {
 
   private:
 
-    size_t topology_s;
-    const std::vector<int> topology;
+    const std::vector<size_t> topology;
 
     std::vector<layer*> layers;
     std::vector<matrix*> weight_matrices;
@@ -27,9 +27,18 @@ class neural_network {
 
   public:
 
-    neural_network(std::vector<int> require_topology);
+    neural_network(std::vector<size_t> require_topology);
 
     auto set_current_input(std::vector<double> require_input) -> void;
+    
+    auto feed_forward() -> void;
+
+    matrix *get_neuron_matrix(size_t index);
+    matrix *get_activated_neuron_matrix(size_t index);
+    matrix *get_derived_neuron_matrix(size_t index);
+    matrix *get_weight_matrix(size_t index);
+
+    auto set_neuron_val(size_t index_l, size_t index_n, double val) -> void;
 
     auto display_result() -> void;
 

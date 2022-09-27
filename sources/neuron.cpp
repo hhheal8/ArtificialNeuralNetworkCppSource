@@ -3,7 +3,6 @@
 #include <random>
 #include <vector>
 
-#include "dealloc_all.hpp"
 #include "neuron.hpp"
 
 neuron::neuron(double require_val): val(require_val) {

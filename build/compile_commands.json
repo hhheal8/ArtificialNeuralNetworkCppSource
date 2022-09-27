@@ -1,7 +1,37 @@
 [
 {
   "directory": "C:/Users/ictgi/Desktop/ArtificialNeuralNetworkCppSource/build",
-  "command": "C:\\mingw64\\bin\\g++.exe   -g -o CMakeFiles\\ArtificialNeuralNetworkCpp.dir\\main.cpp.obj -c C:\\Users\\ictgi\\Desktop\\ArtificialNeuralNetworkCppSource\\main.cpp",
+  "command": "C:\\mingw64\\bin\\g++.exe  @CMakeFiles/ArtificialNeuralNetworkCpp.dir/includes_CXX.rsp -g -o CMakeFiles\\ArtificialNeuralNetworkCpp.dir\\main.cpp.obj -c C:\\Users\\ictgi\\Desktop\\ArtificialNeuralNetworkCppSource\\main.cpp",
   "file": "C:/Users/ictgi/Desktop/ArtificialNeuralNetworkCppSource/main.cpp"
+},
+{
+  "directory": "C:/Users/ictgi/Desktop/ArtificialNeuralNetworkCppSource/build",
+  "command": "C:\\mingw64\\bin\\g++.exe  @CMakeFiles/ArtificialNeuralNetworkCpp.dir/includes_CXX.rsp -g -o CMakeFiles\\ArtificialNeuralNetworkCpp.dir\\sources\\layer.cpp.obj -c C:\\Users\\ictgi\\Desktop\\ArtificialNeuralNetworkCppSource\\sources\\layer.cpp",
+  "file": "C:/Users/ictgi/Desktop/ArtificialNeuralNetworkCppSource/sources/layer.cpp"
+},
+{
+  "directory": "C:/Users/ictgi/Desktop/ArtificialNeuralNetworkCppSource/build",
+  "command": "C:\\mingw64\\bin\\g++.exe  @CMakeFiles/ArtificialNeuralNetworkCpp.dir/includes_CXX.rsp -g -o CMakeFiles\\ArtificialNeuralNetworkCpp.dir\\sources\\matrix.cpp.obj -c C:\\Users\\ictgi\\Desktop\\ArtificialNeuralNetworkCppSource\\sources\\matrix.cpp",
+  "file": "C:/Users/ictgi/Desktop/ArtificialNeuralNetworkCppSource/sources/matrix.cpp"
+},
+{
+  "directory": "C:/Users/ictgi/Desktop/ArtificialNeuralNetworkCppSource/build",
+  "command": "C:\\mingw64\\bin\\g++.exe  @CMakeFiles/ArtificialNeuralNetworkCpp.dir/includes_CXX.rsp -g -o CMakeFiles\\ArtificialNeuralNetworkCpp.dir\\sources\\utils\\matrix_to_vector.cpp.obj -c C:\\Users\\ictgi\\Desktop\\ArtificialNeuralNetworkCppSource\\sources\\utils\\matrix_to_vector.cpp",
+  "file": "C:/Users/ictgi/Desktop/ArtificialNeuralNetworkCppSource/sources/utils/matrix_to_vector.cpp"
+},
+{
+  "directory": "C:/Users/ictgi/Desktop/ArtificialNeuralNetworkCppSource/build",
+  "command": "C:\\mingw64\\bin\\g++.exe  @CMakeFiles/ArtificialNeuralNetworkCpp.dir/includes_CXX.rsp -g -o CMakeFiles\\ArtificialNeuralNetworkCpp.dir\\sources\\utils\\multiply_matrix.cpp.obj -c C:\\Users\\ictgi\\Desktop\\ArtificialNeuralNetworkCppSource\\sources\\utils\\multiply_matrix.cpp",
+  "file": "C:/Users/ictgi/Desktop/ArtificialNeuralNetworkCppSource/sources/utils/multiply_matrix.cpp"
+},
+{
+  "directory": "C:/Users/ictgi/Desktop/ArtificialNeuralNetworkCppSource/build",
+  "command": "C:\\mingw64\\bin\\g++.exe  @CMakeFiles/ArtificialNeuralNetworkCpp.dir/includes_CXX.rsp -g -o CMakeFiles\\ArtificialNeuralNetworkCpp.dir\\sources\\neural_network.cpp.obj -c C:\\Users\\ictgi\\Desktop\\ArtificialNeuralNetworkCppSource\\sources\\neural_network.cpp",
+  "file": "C:/Users/ictgi/Desktop/ArtificialNeuralNetworkCppSource/sources/neural_network.cpp"
+},
+{
+  "directory": "C:/Users/ictgi/Desktop/ArtificialNeuralNetworkCppSource/build",
+  "command": "C:\\mingw64\\bin\\g++.exe  @CMakeFiles/ArtificialNeuralNetworkCpp.dir/includes_CXX.rsp -g -o CMakeFiles\\ArtificialNeuralNetworkCpp.dir\\sources\\neuron.cpp.obj -c C:\\Users\\ictgi\\Desktop\\ArtificialNeuralNetworkCppSource\\sources\\neuron.cpp",
+  "file": "C:/Users/ictgi/Desktop/ArtificialNeuralNetworkCppSource/sources/neuron.cpp"
 }
 ]

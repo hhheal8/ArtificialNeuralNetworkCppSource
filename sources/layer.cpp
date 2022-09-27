@@ -34,12 +34,15 @@ matrix *layer::matrixify_vals() {
 
   for(size_t i{}; i < neurons.size(); ++i) {
     m1->set_val(0, i, neurons.at(i)->get_val());
-    if(i == neurons.size()) {
-      dealloc_all(m1);
-    }
+    // if(i == neurons.size()) {
+    //   dealloc_all(m1);
+    // }
   }
 
   return m1;
+
+  // dealloc_all(m1);
+
 
 }
 
@@ -49,12 +52,14 @@ matrix *layer::matrixify_activated_vals() {
 
   for(size_t i{}; i < neurons.size(); ++i) {
     m2->set_val(0, i, neurons.at(i)->get_activated_val());
-    if(i == neurons.size()) {
-      dealloc_all(m2);
-    }
+    // if(i == neurons.size()) {
+    //   dealloc_all(m2);
+    // }
   }
 
   return m2;
+
+  // dealloc_all(m2);
 
 }
 
@@ -64,11 +69,13 @@ matrix *layer::matrixify_derived_vals() {
 
   for(size_t i{}; i < neurons.size(); ++i) {
     m3->set_val(0, i, neurons.at(i)->get_derived_val());
-    if(i == neurons.size()) {
-      dealloc_all(m3);
-    }
+    // if(i == neurons.size()) {
+    //   dealloc_all(m3);
+    // }
   }
 
   return m3;
+
+  // dealloc_all(m3);
 
 }

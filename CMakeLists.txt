@@ -18,4 +18,5 @@ add_executable(
 
 target_include_directories(
   ArtificialNeuralNetworkCpp PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/includes
+  ArtificialNeuralNetworkCpp PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/includes/utils
 )
