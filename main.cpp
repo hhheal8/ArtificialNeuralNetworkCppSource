@@ -66,10 +66,17 @@ auto main() -> int {
   topology.emplace_back(1);
 
   neural_network *nn2 = new neural_network(topology);
+
   nn2->set_current_input(input);
+  nn2->set_current_target(input);
+
   nn2->feed_forward();
 
+  nn2->set_errors();
+
   nn2->display_result();
+
+  std::cout << "Total Error: " << nn2->get_total_errors() << "\n";
 
   dealloc_all(nn2);
   // dealloc_all(test1, m, nn, nn2);

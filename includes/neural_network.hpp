@@ -25,18 +25,30 @@ class neural_network {
 
     std::vector<double> input;
 
+    std::vector<double> target;
+
+    double error{};
+    std::vector<double> errors;
+    std::vector<double> historical_errors;
+
   public:
 
     neural_network(std::vector<size_t> require_topology);
 
-    auto set_current_input(std::vector<double> require_input) -> void;
-    
     auto feed_forward() -> void;
+
+    auto set_current_input(std::vector<double> require_input) -> void;
 
     matrix *get_neuron_matrix(size_t index);
     matrix *get_activated_neuron_matrix(size_t index);
     matrix *get_derived_neuron_matrix(size_t index);
     matrix *get_weight_matrix(size_t index);
+
+    auto set_errors() -> void;
+    auto set_current_target(std::vector<double> require_target) -> void;
+
+    auto get_errors() const -> std::vector<double>;
+    auto get_total_errors() const -> double;
 
     auto set_neuron_val(size_t index_l, size_t index_n, double val) -> void;
 

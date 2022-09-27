@@ -7,7 +7,7 @@
 
 utils::matrix_to_vector::matrix_to_vector(matrix *require_a): a(require_a) {}
 
-std::vector<double> utils::matrix_to_vector::execute() {
+auto utils::matrix_to_vector::execute() -> std::vector<double> {
 
   std::vector<double> result;
 

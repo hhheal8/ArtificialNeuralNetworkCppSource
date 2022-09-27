@@ -21,7 +21,7 @@ namespace utils {
 
       matrix_to_vector(matrix *require_a);
 
-      std::vector<double> execute();
+      auto execute() -> std::vector<double>;
 
   };
 

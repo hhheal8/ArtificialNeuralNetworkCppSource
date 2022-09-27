@@ -94,6 +94,46 @@ matrix *neural_network::get_weight_matrix(size_t index) {
   return weight_matrices.at(index);
 }
 
+auto neural_network::set_errors() -> void {
+
+  if(target.size() == 0) {
+    std::cerr << "\nNo target for this Neural Network\n";
+    assert(false);
+  }
+
+  if(target.size() != layers.at(layers.size() - 1)->get_neurons().size()) {
+    std::cerr << "\nTarget size is not the same as output layer size: " << layers.at(layers.size() - 1)->get_neurons().size() << "\n";
+    assert(false);
+  }
+
+  error = 0.00;
+
+  size_t output_layer_i = layers.size() - 1;
+
+  std::vector<neuron*> output_neurons = layers.at(output_layer_i)->get_neurons();
+  
+  for(size_t i{}; i < target.size(); ++i) {
+    double temp_err = (output_neurons.at(i)->get_activated_val() - target.at(i));
+    errors.at(i) = temp_err;
+    error += temp_err;
+  }
+
+  historical_errors.push_back(error);
+
+}
+
+auto neural_network::set_current_target(std::vector<double> require_target) -> void{
+  target = require_target;
+}
+
+auto neural_network::get_errors() const -> std::vector<double> {
+  return errors;
+}
+
+auto neural_network::get_total_errors() const -> double {
+  return error;
+}
+
 auto neural_network::set_neuron_val(size_t index_l, size_t index_n, double val) -> void {
   layers.at(index_l)->set_val(index_n, val);
 }
